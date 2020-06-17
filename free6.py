@@ -61,6 +61,8 @@ class MyClient(discord.Client):
             return
 
         cont=message.content.lower()
+        print(cont)
+        print(message.author.id)
 
         #IF Alex sends message
         if message.author.id == 700448102913671208:
