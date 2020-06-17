@@ -63,9 +63,10 @@ class MyClient(discord.Client):
         cont=message.content.lower()
         print(cont)
         print(message.author.id)
+        
 
         #IF Alex sends message
-        if message.author.id == 700448102913671208:
+        if message.author.id == 185790487569891328:
 
             print("MESSAGE FROM THE FREEZED! HE IS ON MESSAGE {}".format(FrozStats.message_count))
             ##  Increment the msgcount
