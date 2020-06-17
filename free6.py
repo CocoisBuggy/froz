@@ -41,6 +41,7 @@ write.read_stats()
 print("got new stats")
 print("msg count: ", FrozStats.message_count)
 print("level: ", FrozStats.level)
+print("Token: ", Token)
 print("------------")
 
 
@@ -48,7 +49,6 @@ class MyClient(discord.Client):
 
 
     async def on_ready(self):
-        client.max_messages(None)
         activity = discord.Game(name="Hmm")
         await client.change_presence(status=discord.Status.online, activity=activity)
 
